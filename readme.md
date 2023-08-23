@@ -77,7 +77,7 @@ Or, use more granular page level parsing events (v2.0.0)
 
 ````javascript
     pdfParser.on("readable", meta => console.log("PDF Metadata", meta) );
-    pdfParser.on("data", page => console.log(page ? "One page paged" : "All pages parsed", page));
+    pdfParser.on("data", page => console.log(page ? "One page parsed" : "All pages parsed", page));
     pdfParser.on("error", err => console.erro("Parser Error", err);
 ````
 
